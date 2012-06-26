@@ -1,0 +1,188 @@
+﻿body {
+    font-family: 'Segoe UI';
+    font-size: 85%;
+    color: #111;
+                
+    background: white;
+	
+	margin: 0;
+}  
+
+/* Menu styles */
+#Menu {
+	position: fixed;
+	left: 0; right: 0; top: 0;
+	
+	height: 38px;
+	background: -webkit-linear-gradient(top, #555, #444);
+	border-bottom: 1px solid #222;
+}
+
+#AppLogo {
+	/* Text logo */
+	color: white;
+	font-size: large;
+	text-shadow: 0 0 5px #777;
+	width: 256px;
+	margin: 5px 10px;
+	cursor: default;
+}
+	#AppLogo:hover {
+		text-shadow: 0 0 20px #AAA;
+	}
+
+/* Toolbox panel */
+#ToolboxPanel {
+	position: fixed;
+	left: 0; right: 0; top: 39px;
+	height: 60px;
+	
+	cursor: default;
+	
+	border-top: 1px solid #666;
+	background: -webkit-linear-gradient(top, #555, #444);
+}
+
+/* Toolbox container */
+#ToolboxContainer {
+	margin-top: 38px;
+	position: relative;
+	left: -50%;
+}
+
+.ToolboxGroup {
+	height: 60px;
+	width: 60px;
+
+	float: left;
+	
+	border-left: 1px solid #3A3A3A;
+	border-bottom: 1px solid #3A3A3A;
+	border-right: 1px solid #5E5E5E;
+	
+	-webkit-filter: grayscale(1);
+}
+	.ToolboxGroup > img {
+		margin: 6px;
+	}
+
+.ToolboxGroupSelected {
+	background: -webkit-linear-gradient(bottom, #666, #777);
+	-webkit-filter: grayscale(0);
+}
+	.ToolboxGroupSelected > .ToolboxItemsList {
+		display: block;
+	}
+
+.ToolboxItemsList {
+	display: none;
+	margin-top: 8px;
+}
+	.ToolboxItemsList > table {
+		width: 100%;
+		border-collapse: collapse;
+		border: 1px solid #AAA;
+		background: #E5E5E5;
+	}
+
+.ToolboxItem {
+	padding: 0;
+}
+	.ToolboxItem > div {
+		width: 60px;
+		height: 60px;
+		margin: 1px;
+	}
+	.ToolboxItem:hover > div:not(:empty) {
+		border: 1px solid #555;
+		margin: 0;
+	}
+	.ToolboxItem > div > img {
+		margin: 6px;
+	}
+	/*.ToolboxItem.ui-draggable-dragging {
+		padding: 0;
+		width: 48px;
+		height: 48px;
+		-webkit-box-shadow: 0 0 20px #333;
+	}*/
+
+/* Toolbox group close */
+.ToolboxGroupClose {
+	vertical-align: top;
+	font-family: Webdings;
+	cursor: default;
+	color: #333;
+	background: #CCC;
+}
+	/* On toolbox group close hover */
+	.ToolboxGroupClose:hover {
+		background: #AAA;
+	}
+
+
+/* TODO Remove */
+/* Navigation panel */
+/*
+#NavigationPanel {
+	position: fixed;
+	cursor: default;
+	left: 0; top: 98px; bottom: 0;
+	
+	width: 28px;
+	background: #333;
+	
+	padding-top: 5px;
+} 
+*/
+	/* Navigation panel selection */
+	/*
+	#NavigationPanel > div {
+		color: #CCC;
+		border-left: 5px solid #555;
+		
+		margin-bottom: 16px;
+		
+		text-align: center;
+		line-height: 13px;
+	}
+	*/
+		/* Navigation pnale selection hover */
+		/*
+		#NavigationPanel div:hover {
+			color: rgb(0, 128, 255);
+			border-left: 5px solid rgb(0, 128, 255);
+		}
+		*/
+
+/* Blocks mode Content container */
+#BlocksModeContentContainer {
+	position: fixed;
+	left: 0; right: 0; top: 100px; bottom: 28px;
+	
+	box-shadow: inset 0 0 16px #222;
+	
+	/* Content grid */
+	/* http://css3pie.com/demos/gradient-patterns/ */
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+	background-image: -webkit-linear-gradient(#BBB 2px, transparent 2px),
+                  -webkit-linear-gradient(0, #BBB 2px, transparent 2px),
+                  -webkit-linear-gradient(#EEE 1px, transparent 1px),
+                  -webkit-linear-gradient(0, #EEE 1px, transparent 1px);
+}
+
+/* Status bar styles */
+#StatusBar {
+	position: fixed;
+	left: 0; right: 0; bottom: 0;
+	
+	height: 28px;
+	background: -webkit-linear-gradient(top, #555, #444);
+}
+
+.CenteredContainer {
+	position: relative;
+	left: 50%;
+	float: left;
+}
